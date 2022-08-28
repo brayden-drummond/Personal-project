@@ -2,9 +2,9 @@ import React from 'react'
 
 import { Routes, Route } from 'react-router-dom'
 
-import Home from './Home'
+// import Heading from '../../images/main-destiny-heading.png'
 
-// import Heading from '../../server/public/images/main-destiny-heading.png'
+import Home from './Home'
 
 function App() {
   return (
@@ -12,6 +12,11 @@ function App() {
       <div className="title">
         {/* <img src={Heading}></img> */}
         <h1>Destiny</h1>
+      </div>
+      <div className="main">
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
       </div>
     </>
   )
