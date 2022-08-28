@@ -2,8 +2,10 @@ body {
   text-align: center;
 }
 
+/* Homepage */
+
 .home {
-  position: static;
+  /* get divs to touch? */
 }
 
 .home-image {
@@ -17,15 +19,42 @@ body {
 }
 
 .home-text-container {
-  display:flex;
-  background-image: radial-gradient(rgb(145, 145, 145), rgb(86, 86, 86));
+  color: rgb(222, 222, 222);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-image: radial-gradient(rgb(63, 63, 63), rgb(36, 36, 36));
   background-size: cover;
   height: 300px;
   padding: 0;
   margin: 0;
   border: 0;
 }
-.home-text {
-  width: 100px;
-  height: 100px;
+
+.home-text-1 {
+  display: flex;
+  width: 23%;
+  height: 100%;
+  background-color: red;
+}
+
+.home-text-2 {
+  display: flex;
+  width: 23%;
+  height: 100%;
+  background-color: red;
+}
+
+.home-text-3 {
+  display: flex;
+  width: 23%;
+  height: 100%;
+  background-color: red;
+}
+
+.home-text-4 {
+  display: flex;
+  width: 23%;
+  height: 100%;
+  background-color: red;
 }
