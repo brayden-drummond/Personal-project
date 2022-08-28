@@ -1,34 +1,18 @@
-import React, { useState, useEffect } from 'react'
-import { getGreeting } from '../apiClient'
+import React from 'react'
 
-const App = () => {
-  const [greeting, setGreeting] = useState('')
-  const [count, setCount] = useState(0)
-  const [isError, setIsError] = useState(false)
+import { Routes, Route } from 'react-router-dom'
 
-  useEffect(() => {
-    getGreeting()
-      .then((greeting) => {
-        console.log(greeting)
-        setGreeting(greeting)
-        setIsError(false)
-      })
-      .catch((err) => {
-        console.log(err)
-        setIsError(true)
-      })
-  }, [count])
+import Home from './Home'
 
+// import Heading from '../../server/public/images/main-destiny-heading.png'
+
+function App() {
   return (
     <>
-      {count}
-      <h1>{greeting}</h1>
-      {isError && (
-        <p style={{ color: 'red' }}>
-          There was an error retrieving the greeting.
-        </p>
-      )}
-      <button onClick={() => setCount(count + 1)}>Click</button>
+      <div className="title">
+        {/* <img src={Heading}></img> */}
+        <h1>Destiny</h1>
+      </div>
     </>
   )
 }
