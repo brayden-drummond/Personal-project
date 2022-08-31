@@ -2,6 +2,8 @@ const path = require('path')
 const express = require('express')
 const cors = require('cors')
 
+const dlc = require('./routes/destiny2')
+
 const server = express()
 
 server.use(express.json())
@@ -12,5 +14,7 @@ server.get('*', (req, res) => {
   console.log('server hit!')
   res.sendFile(path.resolve('server/public/index.html'))
 })
+
+server.use('/api/v1/dlc', dlc)
 
 module.exports = server
