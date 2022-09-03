@@ -1,9 +1,8 @@
 export default [
   {
-    id: 1,
-    game: 'destiny-2',
-    dlc: 'Season of Plunder',
     code: 'SOP',
+    game: 'destiny-2',
+    dlcName: 'Season of Plunder',
     image: 'season-of-plunder-image.jpg',
     about:
       'Destiny 2 Season of the Plunder focuses on Eramis the Eliksni, who finally breaks free from the icy clutches of the Stasis power at the end of Beyond Light expansion.',
@@ -13,10 +12,9 @@ export default [
   },
 
   {
-    id: 2,
-    game: 'destiny-2',
-    dlc: 'Season of the Haunted',
     code: 'SOTH',
+    game: 'destiny-2',
+    dlcName: 'Season of the Haunted',
     image: 'season-of-the-haunted.jpg',
     about:
       'As the Leviathan forms a connection with the Pyramid, Nightmares of the past awaken and threaten to torment any who dare intervene. Stare into the abyss and find bravery within the mantle of the reaper and the steel of the scythe.',
@@ -25,10 +23,9 @@ export default [
     review: 'A really good dlc - 2',
   },
   {
-    id: 3,
-    game: 'destiny',
-    dlc: 'The Dark Below',
     code: 'TDB',
+    game: 'destiny',
+    dlcName: 'The Dark Below',
     image: 'the-dark-below.jpg',
     about:
       'The expanded story focuses on new character Eris, who has spent years hiding among the Hive only to come forward bearing a warning: The Hive are apparently trying to summon a demigod, Crota, to destroy Earth. Eris can be found in the Tower, where she willll offer you special quests and bounties.',
@@ -37,11 +34,10 @@ export default [
     review: 'A really good dlc - 3',
   },
   {
-    id: 4,
-    game: 'destiny',
-    dlc: 'House of Wolves',
     code: 'HOW',
-    image: 'house of wolves.jpg',
+    game: 'destiny',
+    dlcName: 'House of Wolves',
+    image: 'house-of-wolves.jpg',
     about:
       'Queen Mara Sov of The Reef orders that The Reef be opened to the Guardians. The Queen, through Petra Venj, recruits Guardians to hunt down the House of Wolves, a Fallen house that once served the Queen, but broke their alliance under the command of Skolas, a Fallen Captain who plans to unite all Fallen houses under one banner.',
     activities:

@@ -7,7 +7,6 @@ function Game() {
   const game = useParams().game
   const image = gameData[game].image
   const dlcs = gameData[game].dlcs
-  console.log(image)
 
   return (
     <div>
