@@ -11,13 +11,13 @@ function Game() {
 
   return (
     <div>
-      <img src={`/images/${image}`} />
+      <img className="game-banner-image" src={`/images/${image}`} />
       <div>
         <ul>
           {dlcs.map((dlc) => {
             return (
               <li key={dlc.name}>
-                <Link to={`/${game}/Season${dlc.season}`}>{dlc.name}</Link>
+                <Link to={`/${game}/${dlc.code}`}>{dlc.name}</Link>
               </li>
             )
           })}

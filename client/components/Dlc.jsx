@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link, useParams } from 'react-router-dom'
 
-import destiny2Data from '../../data/destiny2'
+import dlcData from '../../data/dlcs'
 
 function Dlc() {
   const { id } = useParams()
-  const dlc = destiny2Data.find((data) => {
+  const dlc = dlcData.find((data) => {
     data.id === id
   })
 
