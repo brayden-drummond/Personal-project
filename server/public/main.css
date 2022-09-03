@@ -1,0 +1,60 @@
+body {
+  text-align: center;
+}
+
+/* Homepage */
+
+.home {
+  /* get divs to touch? */
+}
+
+.home-image {
+  width: 100%;
+  height: auto;
+  margin: none;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.home-text-container {
+  color: rgb(222, 222, 222);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-image: radial-gradient(rgb(63, 63, 63), rgb(36, 36, 36));
+  background-size: cover;
+  height: 300px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.home-text-1 {
+  display: flex;
+  width: 23%;
+  height: 100%;
+  background-color: red;
+}
+
+.home-text-2 {
+  display: flex;
+  width: 23%;
+  height: 100%;
+  background-color: red;
+}
+
+.home-text-3 {
+  display: flex;
+  width: 23%;
+  height: 100%;
+  background-color: red;
+}
+
+.home-text-4 {
+  display: flex;
+  width: 23%;
+  height: 100%;
+  background-color: red;
+}
