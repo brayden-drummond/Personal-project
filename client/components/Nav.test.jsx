@@ -4,10 +4,10 @@ import React from 'react'
 import Nav from './Nav'
 
 describe('<Nav />', () => {
-  it('renders a list of dlcs', () => {
+  it('renders a list of games', () => {
     render(<Nav />)
 
-    const heading = screen.getByRole('heading')
-    expect(heading).toHaveTextContent('Nav')
+    const heading = screen.getByRole('listitem')
+    expect(heading).toHaveTextContent('Destiny')
   })
 })

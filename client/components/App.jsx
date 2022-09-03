@@ -6,6 +6,7 @@ import { Routes, Route } from 'react-router-dom'
 
 import Home from './Home'
 import Nav from './Nav'
+import Game from './Game'
 import Dlc from './Dlc'
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/:dlc" element={<Dlc />} />
+          <Route path="/:game" element={<Game />} />
         </Routes>
       </div>
     </>
