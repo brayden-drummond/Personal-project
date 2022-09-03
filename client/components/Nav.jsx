@@ -11,7 +11,7 @@ function Nav() {
         {destiny2Data.map((data) => {
           return (
             <li key={data.id}>
-              <Link to={`/${data.dlc}`}>{data.dlc}</Link>
+              <Link to={`/${data.id}`}>{data.dlc}</Link>
             </li>
           )
         })}

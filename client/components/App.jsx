@@ -19,7 +19,7 @@ function App() {
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/:dlc" element={<Dlc />} />
+          <Route path="/:id" element={<Dlc />} />
         </Routes>
       </div>
     </>

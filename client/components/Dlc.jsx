@@ -4,8 +4,13 @@ import { Link, useParams } from 'react-router-dom'
 import destiny2Data from '../../data/destiny2'
 
 function Dlc() {
-  const dlc = useParams().dlc
+  const { id } = useParams()
+  const dlc = destiny2Data.find((data) => {
+    data.id === id
+  })
+
   console.log(dlc)
+
   return (
     <div>
       <p>hello</p>

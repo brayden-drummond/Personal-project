@@ -1,6 +1,7 @@
 export default [
   {
     id: 1,
+    game: 'destiny-2',
     dlc: 'Season of Plunder',
     image: '../public/images/season-of-plunder-image.jpg',
     about:
@@ -12,6 +13,7 @@ export default [
 
   {
     id: 2,
+    game: 'destiny-2',
     dlc: 'Season of the Haunted',
     image: '../public/images/season-of-the-haunted.jpg',
     about:
