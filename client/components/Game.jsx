@@ -7,11 +7,11 @@ function Game() {
   const game = useParams().game
   const image = gameData[game].image
   const dlcs = gameData[game].dlcs
+  console.log(image)
 
   return (
     <div>
-      <h2>{game}</h2>
-      <img src={image} />
+      <img src={`/images/${image}`} />
       <div>
         <ul>
           {dlcs.map((dlc) => {
