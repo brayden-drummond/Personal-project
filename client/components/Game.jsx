@@ -7,16 +7,21 @@ function Game() {
   const game = useParams().game
   const image = gameData[game].image
   const dlcs = gameData[game].dlcs
-  console.log(dlcs)
 
   return (
     <div>
       <h2>{game}</h2>
       <img src={image} />
       <div>
-        {/* {dlcs.map((dlc) => {
-          return <div>{dlc.name}</div>
-        })} */}
+        <ul>
+          {dlcs.map((dlc) => {
+            return (
+              <li key={dlc.name}>
+                <Link to={`/${game}/Season${dlc.season}`}>{dlc.name}</Link>
+              </li>
+            )
+          })}
+        </ul>
       </div>
     </div>
   )

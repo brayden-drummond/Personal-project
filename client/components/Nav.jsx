@@ -6,17 +6,14 @@ import gameData from '../../data/game'
 function Nav() {
   const games = Object.keys(gameData)
   return (
-    <div>
-      <h2>Nav</h2>
-      <ul>
-        {games.map((game) => {
-          return (
-            <li key={game}>
-              <Link to={`/${game}`}>{game}</Link>
-            </li>
-          )
-        })}
-      </ul>
+    <div className="topnav">
+      {games.map((game) => {
+        return (
+          <p key={game}>
+            <Link to={`/${game}`}>{game}</Link>
+          </p>
+        )
+      })}
     </div>
   )
 }
