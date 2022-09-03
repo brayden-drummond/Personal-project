@@ -1,17 +1,18 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import destiny2Data from '../../data/destiny2'
+import gameData from '../../data/game'
 
 function Nav() {
+  const games = Object.keys(gameData)
   return (
     <div>
       <h2>Nav</h2>
       <ul>
-        {destiny2Data.map((data) => {
+        {games.map((game) => {
           return (
-            <li key={data.id}>
-              <Link to={`/${data.id}`}>{data.dlc}</Link>
+            <li key={game}>
+              <Link to={`/${game}`}>{game}</Link>
             </li>
           )
         })}
