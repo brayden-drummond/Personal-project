@@ -2,6 +2,9 @@ body {
   text-align: center;
 }
 
+/* .main {
+  display: flex;
+} */
 /* Nav bar */
 
 .topnav {
@@ -85,4 +88,17 @@ body {
   width: 23%;
   height: 100%;
   background-color: red;
+}
+
+/* blog page styling */
+.blog-container {
+  width: 80%;
+  height: 100%;
+  background-color: aqua;
+}
+
+.blog-image {
+  width: 100%;
+  height: 80%;
+  object-fit: contain;
 }

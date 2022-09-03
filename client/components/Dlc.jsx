@@ -10,12 +10,19 @@ function Dlc() {
   return (
     <div className="blog-container">
       <div className="blog-header">{dlc.dlcName}</div>
-      <div className="blog-image">
-        <img src={`/images/${dlc.image}`} />
+      <img className="blog-image" src={`/images/${dlc.image}`} />
+      <div>
+        <h3>About</h3>
+        <div className="blog-about">{dlc.about}</div>
       </div>
-      <div className="blog-about">{dlc.about}</div>
-      <div className="blog-activities">{dlc.activities}</div>
-      <div className="blog-review">{dlc.review}</div>
+      <div>
+        <h3>Activities</h3>
+        <div className="blog-activities">{dlc.activities}</div>
+      </div>
+      <div>
+        <h3>Reviews</h3>
+        <div className="blog-review">{dlc.review}</div>
+      </div>
     </div>
   )
 }
