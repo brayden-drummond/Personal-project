@@ -7,6 +7,7 @@ const db = require('../db/db')
 router.get('/', (req, res) => {
   db.getDlc
     .then((dlc) => {
+      console.log(dlc)
       res.json(dlc)
     })
     .catch((err) => {

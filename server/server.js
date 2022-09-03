@@ -15,6 +15,6 @@ server.get('*', (req, res) => {
   res.sendFile(path.resolve('server/public/index.html'))
 })
 
-server.use('/api/v1/dlc', dlc)
+server.use('/v1/dlc', dlc)
 
 module.exports = server
