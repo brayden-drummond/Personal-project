@@ -1,7 +1,9 @@
 exports.up = function (knex) {
-  return knex.schema.createTable('destiny2', (table) => {
+  return knex.schema.createTable('destiny', (table) => {
     table.increments('id')
-    table.string('dlc')
+    table.string('code')
+    table.string('game')
+    table.string('dlcName')
     table.string('image')
     table.string('about')
     table.string('activities')
@@ -10,5 +12,5 @@ exports.up = function (knex) {
 }
 
 exports.down = function (knex) {
-  return knex.schema.dropTable('destiny2')
+  return knex.schema.alterTable('destiny2')
 }
