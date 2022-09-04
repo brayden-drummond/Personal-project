@@ -8,6 +8,7 @@ import Home from './Home'
 import Nav from './Nav'
 import Game from './Game'
 import Dlc from './Dlc'
+import Characters from './API/Characters'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/:game" element={<Game />} />
           <Route path="/:game/:code" element={<Dlc />} />
+          <Route path="/characters" element={<Characters />} />
         </Routes>
       </div>
     </>

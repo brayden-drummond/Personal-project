@@ -2,7 +2,7 @@ const path = require('path')
 const express = require('express')
 const cors = require('cors')
 
-const dlc = require('./routes/destiny2')
+const characters = require('./routes/characters')
 
 const server = express()
 
@@ -15,6 +15,6 @@ server.get('*', (req, res) => {
   res.sendFile(path.resolve('server/public/index.html'))
 })
 
-server.use('/v1/dlc', dlc)
+server.use('api/v1/characters', characters)
 
 module.exports = server

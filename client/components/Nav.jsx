@@ -20,7 +20,11 @@ function Nav() {
             </p>
           )
         })}
-        {/* Create link for character data api */}
+        <div className="characters-topnav">
+          <p>
+            <Link to={'/characters'}>Characters</Link>
+          </p>
+        </div>
       </div>
     </div>
   )

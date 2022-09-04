@@ -3,9 +3,9 @@ const config = require('./knexfile')[environment]
 const connection = require('knex')(config)
 
 module.exports = {
-  getDlc,
+  getCharacters,
 }
 
-function getDlc(db = connection) {
-  return db('destiny2').select()
+function getCharacters(db = connection) {
+  return db('characters').select()
 }
