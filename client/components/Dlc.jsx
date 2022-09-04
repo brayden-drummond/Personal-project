@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 
 import dlcData from '../../data/dlcs'
+import AddReview from './AddReview'
 
 function Dlc() {
   const { code } = useParams()
@@ -25,6 +26,9 @@ function Dlc() {
         <div>
           <h3>Reviews</h3>
           <div className="blog-review">{dlc.review}</div>
+        </div>
+        <div>
+          <AddReview />
         </div>
       </div>
     </div>
