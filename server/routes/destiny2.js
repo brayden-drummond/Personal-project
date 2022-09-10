@@ -11,6 +11,7 @@ router.get('/', (req, res) => {
       res.json(dlc)
     })
     .catch((err) => {
+      console.error(err.message)
       res.status(500).send(err.message)
     })
 })

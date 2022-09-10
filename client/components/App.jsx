@@ -13,10 +13,7 @@ import Characters from './API/Characters'
 function App() {
   return (
     <>
-      <div className="title">
-        {/* <img src={Heading}></img> */}
-        <h1>Destiny</h1>
-      </div>
+      <div className="title">{/* <img src={Heading}></img> */}</div>
       <div className="main">
         <Nav />
         <Routes>
