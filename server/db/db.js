@@ -1,11 +1,9 @@
-const environment = process.env.NODE_ENV || 'development'
-const config = require('./knexfile')[environment]
-const connection = require('knex')(config)
-
-module.exports = {
-  getCharacters,
-}
+const connection = require('./connection')
 
 function getCharacters(db = connection) {
   return db('characters').select()
+}
+
+module.exports = {
+  getCharacters,
 }

@@ -8,7 +8,7 @@ import Home from './Home'
 import Nav from './Nav'
 import Game from './Game'
 import Dlc from './Dlc'
-import Characters from './API/Characters'
+import Characters from './Characters'
 
 function App() {
   return (
