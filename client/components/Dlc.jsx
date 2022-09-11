@@ -11,9 +11,7 @@ function Dlc() {
   return (
     <div className="blog-container">
       <div className="blog-box">
-        <div className="blog-header">
-          <h2>{dlc.dlcName}</h2>
-        </div>
+        <div className="blog-header"></div>
         <img className="blog-image" src={`/images/${dlc.image}`} />
         <div>
           <h3>About</h3>

@@ -1,11 +1,9 @@
-const environment = process.env.NODE_ENV || 'development'
-const config = require('./knexfile')[environment]
-const connection = require('knex')(config)
+const connection = require('./connection')
 
-module.exports = {
-  getDlc,
+function getCharacters(db = connection) {
+  return db('characters').select()
 }
 
-function getDlc(db = connection) {
-  return db('destiny2').select()
+module.exports = {
+  getCharacters,
 }

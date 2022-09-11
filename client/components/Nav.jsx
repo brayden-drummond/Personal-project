@@ -7,6 +7,11 @@ function Nav() {
   const games = Object.keys(gameData)
   return (
     <div className="topnav">
+      <div className="topnav-image-box">
+        <div className="topnav-image">
+          {/* <img src="../images/destiny.png" /> */}
+        </div>
+      </div>
       <div className="home-topnav">
         <p>
           <Link to={'/'}>Home</Link>
@@ -20,7 +25,11 @@ function Nav() {
             </p>
           )
         })}
-        {/* Create link for character data api */}
+        <div className="characters-topnav">
+          <p>
+            <Link to={'/characters'}>Characters</Link>
+          </p>
+        </div>
       </div>
     </div>
   )

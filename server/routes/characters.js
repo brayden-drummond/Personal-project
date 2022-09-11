@@ -1,18 +1,18 @@
 const express = require('express')
-const router = express.Router()
 
 const db = require('../db/db')
 
-//GET /api/v1/dlc
+const router = express.Router()
+
 router.get('/', (req, res) => {
-  db.getDlc
-    .then((dlc) => {
-      console.log(dlc)
-      res.json(dlc)
+  db.getCharacters()
+    .then((results) => {
+      console.log(results)
+      res.json(results)
     })
     .catch((err) => {
       console.error(err.message)
-      res.status(500).send(err.message)
+      res.status(500).json({ message: 'Something went wrong' })
     })
 })
 
