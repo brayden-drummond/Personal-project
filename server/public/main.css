@@ -140,3 +140,10 @@ ul {
   height: 80%;
   object-fit: contain;
 }
+
+/* character page */
+
+.character-image {
+  height: 30%;
+  width: 30%;
+}

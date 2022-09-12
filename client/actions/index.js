@@ -2,6 +2,7 @@ import { getCharacters } from '../apis/characters'
 
 export const SET_LOADING = 'SET_LOADING'
 export const SET_CHARACTERS = 'SET_CHARACTERS'
+export const DELETE_CHARACTERS = 'DELETE_CHARACTERS'
 
 export function setCharacters(characters) {
   return {
@@ -13,6 +14,13 @@ export function setCharacters(characters) {
 export function setLoading() {
   return {
     type: SET_LOADING,
+  }
+}
+
+export function deleteCharacter(character) {
+  return {
+    type: 'DELETE_CHARACTERS',
+    payload: character,
   }
 }
 
