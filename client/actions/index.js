@@ -1,4 +1,4 @@
-import { getCharacters } from '../apis/characters'
+import { getCharacters, addNewCharacter } from '../apis/characters'
 
 export const SET_LOADING = 'SET_LOADING'
 export const SET_CHARACTERS = 'SET_CHARACTERS'
@@ -28,6 +28,15 @@ export function fetchCharacters() {
   return (dispatch) => {
     dispatch(setLoading())
     return getCharacters().then((characters) => {
+      dispatch(setCharacters(characters))
+      return null
+    })
+  }
+}
+
+export function addCharacter(newCharacter) {
+  return (dispatch) => {
+    return addNewCharacter(newCharacter).then((characters) => {
       dispatch(setCharacters(characters))
       return null
     })

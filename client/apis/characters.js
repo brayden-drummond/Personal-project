@@ -7,3 +7,12 @@ export function getCharacters() {
     return res.body
   })
 }
+
+export function addNewCharacter(newCharacter) {
+  return request
+    .post(rootUrl + '/characters')
+    .send({ newCharacter })
+    .then((res) => {
+      return res.body
+    })
+}

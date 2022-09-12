@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
 import { fetchCharacters, deleteCharacter } from '../actions'
+import AddCharacter from './AddCharacter'
 
 // import Stack from 'react-bootstrap/Stack'
 // import 'bootstrap/dist/css/bootstrap.min.css'
@@ -40,6 +41,7 @@ function Characters() {
             )
           })}
         </div>
+        <AddCharacter />
         {/* </Stack> */}
       </div>
     </>
