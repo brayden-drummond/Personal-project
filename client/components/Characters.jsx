@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
-import { fetchCharacters, deleteCharacter } from '../actions'
+import { fetchCharacters, deleteCharacter, delCharacter } from '../actions'
 import AddCharacter from './AddCharacter'
 
 // import Stack from 'react-bootstrap/Stack'
@@ -31,9 +31,7 @@ function Characters() {
                   />
                   <p>{character.class}</p>
                   <p>{character.bio}</p>
-                  <button
-                    onClick={() => dispatch(deleteCharacter(character.id))}
-                  >
+                  <button onClick={() => dispatch(delCharacter(character))}>
                     Delete
                   </button>
                 </div>

@@ -11,3 +11,7 @@ export function getCharacters() {
 export function addNewCharacter(newCharacter) {
   return request.post(rootUrl + '/characters').send({ newCharacter })
 }
+
+export function deleteACharacter(character) {
+  return request.post(rootUrl + '/characters').send(character)
+}

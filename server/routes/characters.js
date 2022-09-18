@@ -29,16 +29,15 @@ router.post('/', (req, res) => {
     })
 })
 
-//pass in delete function
-// router.post('/', (req, res) => {
-//   const id = req.body.id
-//   db.deleteCharacter(id)
-//     .then((results) => {
-//       res.json(results)
-//     })
-//     .catch((err) => {
-//       console.error(err.message)
-//       res.status(500).json({ message: 'Something went wrong' })
-//     })
-// })
+router.post('/', (req, res) => {
+  const id = req.body.id
+  db.deleteCharacter(id)
+    .then((results) => {
+      res.json(results)
+    })
+    .catch((err) => {
+      console.error(err.message)
+      res.status(500).json({ message: 'Something went wrong' })
+    })
+})
 module.exports = router
