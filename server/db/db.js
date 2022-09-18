@@ -5,7 +5,7 @@ function getCharacters(db = connection) {
 }
 
 function deleteCharacter(id, db = connection) {
-  return db('characters').select().where('id', id).delete()
+  return db('characters').delete().where('id', id)
 }
 
 function addCharacter(newCharacter, db = connection) {

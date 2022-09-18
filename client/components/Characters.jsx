@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
-import { fetchCharacters, deleteCharacter, delCharacter } from '../actions'
+import { fetchCharacters, delCharacter } from '../actions'
 import AddCharacter from './AddCharacter'
 
 // import Stack from 'react-bootstrap/Stack'

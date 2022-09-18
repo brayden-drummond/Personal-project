@@ -30,10 +30,10 @@ router.post('/', (req, res) => {
 })
 
 //del
-router.post('/', (req, res) => {
-  const character = req.body
-  console.log(character)
-  db.deleteCharacter(character)
+router.delete('/', (req, res) => {
+  const id = req.body.id
+  console.log(req.body)
+  db.deleteCharacter(id)
     .then((results) => {
       res.json(results)
     })

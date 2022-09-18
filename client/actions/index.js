@@ -50,7 +50,6 @@ export function addCharacter(newCharacter) {
 export function delCharacter(character) {
   return (dispatch) => {
     return deleteACharacter(character).then(() => {
-      console.log(character)
       dispatch(fetchCharacters())
       return null
     })

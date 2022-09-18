@@ -25,9 +25,7 @@ function Dlc() {
           <h3>Reviews</h3>
           <div className="blog-review">{dlc.review}</div>
         </div>
-        <div>
-          <AddReview />
-        </div>
+        <div>{/* <AddReview /> */}</div>
       </div>
     </div>
   )
