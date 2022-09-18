@@ -140,3 +140,40 @@ ul {
   height: 80%;
   object-fit: contain;
 }
+
+/* character page */
+
+.character-image {
+  height: 30%;
+  width: 30%;
+}
+
+/* add form */
+.add-character-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-character-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  border-style: solid;
+  border-color: black;
+}
+
+.add-character-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  padding-bottom: 2%;
+}
+
+.form-button {
+  width: fit-content;
+}

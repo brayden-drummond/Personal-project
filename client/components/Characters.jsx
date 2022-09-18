@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
-import { fetchCharacters } from '../actions'
+import { fetchCharacters, deleteCharacter, delCharacter } from '../actions'
+import AddCharacter from './AddCharacter'
 
 // import Stack from 'react-bootstrap/Stack'
 // import 'bootstrap/dist/css/bootstrap.min.css'
@@ -30,11 +31,15 @@ function Characters() {
                   />
                   <p>{character.class}</p>
                   <p>{character.bio}</p>
+                  <button onClick={() => dispatch(delCharacter(character))}>
+                    Delete
+                  </button>
                 </div>
               </div>
             )
           })}
         </div>
+        <AddCharacter />
         {/* </Stack> */}
       </div>
     </>
