@@ -9,10 +9,5 @@ export function getCharacters() {
 }
 
 export function addNewCharacter(newCharacter) {
-  return request
-    .post(rootUrl + '/characters')
-    .send({ newCharacter })
-    .then((res) => {
-      return res.body
-    })
+  return request.post(rootUrl + '/characters').send({ newCharacter })
 }

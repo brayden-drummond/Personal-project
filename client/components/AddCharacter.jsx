@@ -27,14 +27,6 @@ function AddCharacter() {
     e.preventDefault()
     dispatch(addCharacter(form))
     setForm(initialFormData)
-    // addCharacter(form)
-    //   .then((newCharacter) => {
-    //     setCharacters([...characters, newCharacter])
-    //     setForm(initialFormData)
-    // })
-    // .catch((err) => {
-    //   console.error(err.message)
-    // })
   }
 
   return (

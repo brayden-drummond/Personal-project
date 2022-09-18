@@ -8,10 +8,9 @@ function deleteCharacter(id, db = connection) {
   return db('characters').select().where('id', id).delete()
 }
 
-function addCharacter(character, image, bio, theClass, db = connection) {
-  return db('characters')
-    .insert({ name: character, image: image, bio: bio, class: theClass })
-    .then(() => getCharacters())
+function addCharacter(newCharacter, db = connection) {
+  return db('characters').insert(newCharacter)
+  // .then(() => getCharacters())
 }
 module.exports = {
   getCharacters,
