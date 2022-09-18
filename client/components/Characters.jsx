@@ -16,10 +16,10 @@ function Characters() {
 
   return (
     <>
-      <div className="app">
-        <h1>Characters</h1>
-        {/* <Stack gap={3}> */}
+      <div className="character-main">
         <div className="character-container">
+          <h1>Characters</h1>
+          {/* <Stack gap={3}> */}
           {characters.map((character) => {
             return (
               <div className="character-box" key={character.id}>
@@ -39,9 +39,9 @@ function Characters() {
             )
           })}
         </div>
-        <AddCharacter />
         {/* </Stack> */}
       </div>
+      <AddCharacter />
     </>
   )
 }
