@@ -30,42 +30,51 @@ function AddCharacter() {
   }
 
   return (
-    <div>
-      <h2>Add new character</h2>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="name">
-          Name:
-          <input
-            id="name"
-            onChange={handleChange}
-            value={form.name}
-            name="name"
-          />
-        </label>
-        <label htmlFor="name">
-          Image:
-          <input
-            id="image"
-            onChange={handleChange}
-            value={form.image}
-            name="image"
-          />
-        </label>
-        <label htmlFor="name">
-          Class:
-          <input
-            id="class"
-            onChange={handleChange}
-            value={form.class}
-            name="class"
-          />
-        </label>
-        <label htmlFor="name">
-          Bio:
-          <input id="bio" onChange={handleChange} value={form.bio} name="bio" />
-        </label>
-        <button>Add Character</button>
-      </form>
+    <div className="add-character-container">
+      <div className="add-character-box">
+        <h2>Add new character</h2>
+        <form onSubmit={handleSubmit}>
+          <div className="add-character-form">
+            <label htmlFor="name">
+              Name:
+              <input
+                id="name"
+                onChange={handleChange}
+                value={form.name}
+                name="name"
+              />
+            </label>
+            <label htmlFor="name">
+              Image:
+              <input
+                id="image"
+                onChange={handleChange}
+                value={form.image}
+                name="image"
+              />
+            </label>
+            <label htmlFor="name">
+              Class:
+              <input
+                id="class"
+                onChange={handleChange}
+                value={form.class}
+                name="class"
+              />
+            </label>
+            <label htmlFor="name">
+              Bio:
+              <input
+                id="bio"
+                onChange={handleChange}
+                value={form.bio}
+                name="bio"
+              />
+            </label>
+            <button className="form-button">Add Character</button>
+          </div>
+        </form>
+      </div>
     </div>
   )
 }
