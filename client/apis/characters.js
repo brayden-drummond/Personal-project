@@ -13,5 +13,5 @@ export function addNewCharacter(newCharacter) {
 }
 
 export function deleteACharacter(character) {
-  return request.post(rootUrl + '/characters').send(character)
+  return request.delete(rootUrl + '/characters').send(character)
 }

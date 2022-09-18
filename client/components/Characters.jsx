@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
-import { fetchCharacters, deleteCharacter, delCharacter } from '../actions'
+import { fetchCharacters, delCharacter } from '../actions'
 import AddCharacter from './AddCharacter'
 
 // import Stack from 'react-bootstrap/Stack'
@@ -16,10 +16,10 @@ function Characters() {
 
   return (
     <>
-      <div className="app">
-        <h1>Characters</h1>
-        {/* <Stack gap={3}> */}
+      <div className="character-main">
         <div className="character-container">
+          <h1>Characters</h1>
+          {/* <Stack gap={3}> */}
           {characters.map((character) => {
             return (
               <div className="character-box" key={character.id}>
@@ -39,9 +39,9 @@ function Characters() {
             )
           })}
         </div>
-        <AddCharacter />
         {/* </Stack> */}
       </div>
+      <AddCharacter />
     </>
   )
 }
